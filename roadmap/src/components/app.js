@@ -12,6 +12,7 @@ import ShouldComponentUpdate from './component-life-cycle/should-component-updat
 import ConditionalRendering from './conditional-rendering';
 import FunctionalComponent from './functional-component';
 import Home from './home';
+import JSX from './jsx';
 import MapKey from './map-key';
 import PropsParent from './props-parent';
 import State from './state';
@@ -99,6 +100,7 @@ class App extends React.Component {
               path="/getDerivedStateFromError"
               component={GetDerivedStateFromError}
             />
+            <Route exact path="/jsx" component={JSX} />
           </Switch>
         </BrowserRouter>
       </div>

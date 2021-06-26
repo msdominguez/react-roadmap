@@ -44,6 +44,9 @@ class Home extends React.Component {
         <a href="/getDerivedStateFromError">
           <button>getDerivedStateFromError</button>
         </a>
+        <a href="/jsx">
+          <button>jsx</button>
+        </a>
       </div>
     );
   }
