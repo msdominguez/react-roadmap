@@ -11,7 +11,7 @@
 - [x] components > class components
 * `class-component.js`
 - [x] props vs state
-* `props-parents.js`
+* `props-parent.js`
 * `props-child.js`
 * `state.js`
 - [x] conditional rendering
