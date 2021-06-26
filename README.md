@@ -14,7 +14,7 @@
 * `props-parents.js`
 * `props-child.js`
 * `state.js`
-- [ ] conditional rendering
+- [x] conditional rendering
 * `conditional-rendering.js`
 - [x] component life cycle (all)
 * `component-life-cycle/*`
