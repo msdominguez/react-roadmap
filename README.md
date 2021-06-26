@@ -4,8 +4,8 @@
 
 - [x] create react app
 * `create-react-app/*`
-- [ ] jsx
-* 
+- [x] jsx
+* `jsx.js`
 - [x] components > functional components
 * `functional-component.js`
 - [x] components > class components
