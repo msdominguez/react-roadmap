@@ -1,6 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+import UseEffect from './basic-hooks/use-effect';
+import UseState from './basic-hooks/use-state';
 import ClassComponent from './class-component';
 import ComponentDidMount from './component-life-cycle/component-did-mount';
 import ComponentDidUpdate from './component-life-cycle/component-did-update';
@@ -17,8 +19,6 @@ import JSX from './jsx';
 import MapKey from './map-key';
 import PropsParent from './props-parent';
 import State from './state';
-import UseEffect from './use-effect';
-import UseState from './use-state';
 
 class App extends React.Component {
   constructor(props) {
