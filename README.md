@@ -20,12 +20,12 @@
 * `component-life-cycle/*`
 - [x] lists and keys
 * `map-key.js`
-- [ ] composition vs inheritance
-* 
-- [ ] basic hooks > useState
-* 
-- [ ] basic hooks > useEffect
-
+- [x] composition vs inheritance
+* `composition-vs-inheritance.js`
+- [x] basic hooks > useState
+* `basic-hooks/useState.js`
+- [x] basic hooks > useEffect
+* `basic-hooks/useEffect.js`
 
 ## advanced
 
