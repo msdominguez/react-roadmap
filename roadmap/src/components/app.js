@@ -9,6 +9,7 @@ import GetDerivedStateFromError from './component-life-cycle/get-derived-state-f
 import GetDerivedStateFromProps from './component-life-cycle/get-derived-state-from-props';
 import GetSnapshotBeforeUpdate from './component-life-cycle/get-snapshot-before-update';
 import ShouldComponentUpdate from './component-life-cycle/should-component-update';
+import CompositionVsInheritance from './composition-vs-inheritance';
 import ConditionalRendering from './conditional-rendering';
 import FunctionalComponent from './functional-component';
 import Home from './home';
@@ -16,6 +17,8 @@ import JSX from './jsx';
 import MapKey from './map-key';
 import PropsParent from './props-parent';
 import State from './state';
+import UseEffect from './use-effect';
+import UseState from './use-state';
 
 class App extends React.Component {
   constructor(props) {
@@ -51,7 +54,7 @@ class App extends React.Component {
         <BrowserRouter>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/mapKey" component={MapKey} />
+            <Route exact path="/jsx" component={JSX} />
             <Route
               exact
               path="/functionalComponent"
@@ -100,7 +103,14 @@ class App extends React.Component {
               path="/getDerivedStateFromError"
               component={GetDerivedStateFromError}
             />
-            <Route exact path="/jsx" component={JSX} />
+            <Route exact path="/mapKey" component={MapKey} />
+            <Route
+              exact
+              path="/compositionVsInheritance"
+              component={CompositionVsInheritance}
+            />
+            <Route exact path="/useState" component={UseState} />
+            <Route exact path="/useEffect" component={UseEffect} />
           </Switch>
         </BrowserRouter>
       </div>

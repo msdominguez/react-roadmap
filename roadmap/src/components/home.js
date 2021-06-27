@@ -5,23 +5,23 @@ class Home extends React.Component {
     return (
       <div>
         <h1>Examples:</h1>
-        <a href="/mapKey">
-          <button>Map and key</button>
+        <a href="/jsx">
+          <button>jsx</button>
         </a>
         <a href="/functionalComponent">
-          <button>Functional component</button>
+          <button>functional component</button>
         </a>
         <a href="/classComponent">
-          <button>Class component</button>
+          <button>class component</button>
         </a>
         <a href="/state">
-          <button>State</button>
+          <button>state</button>
         </a>
         <a href="/props">
-          <button>Props</button>
+          <button>props</button>
         </a>
         <a href="/conditionalRendering">
-          <button>Conditional rendering</button>
+          <button>conditional rendering</button>
         </a>
         <a href="/componentDidMount">
           <button>componentDidMount</button>
@@ -44,8 +44,17 @@ class Home extends React.Component {
         <a href="/getDerivedStateFromError">
           <button>getDerivedStateFromError</button>
         </a>
-        <a href="/jsx">
-          <button>jsx</button>
+        <a href="/mapKey">
+          <button>map and key</button>
+        </a>
+        <a href="/compositionVsInheritance">
+          <button>composition vs inheritance</button>
+        </a>
+        <a href="/useState">
+          <button>useState</button>
+        </a>
+        <a href="/useEffect">
+          <button>useEffect</button>
         </a>
       </div>
     );
