@@ -1,50 +1,26 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import UseEffect from './basic-hooks/use-effect';
-import UseState from './basic-hooks/use-state';
-import ClassComponent from './class-component';
-import ComponentDidMount from './component-life-cycle/component-did-mount';
-import ComponentDidUpdate from './component-life-cycle/component-did-update';
-import ComponentWillUnmount from './component-life-cycle/component-will-unmount';
-import GetDerivedStateFromError from './component-life-cycle/get-derived-state-from-error';
-import GetDerivedStateFromProps from './component-life-cycle/get-derived-state-from-props';
-import GetSnapshotBeforeUpdate from './component-life-cycle/get-snapshot-before-update';
-import ShouldComponentUpdate from './component-life-cycle/should-component-update';
-import CompositionVsInheritance from './composition-vs-inheritance';
-import ConditionalRendering from './conditional-rendering';
-import FunctionalComponent from './functional-component';
+import UseEffect from './fundamental/basic-hooks/use-effect';
+import UseState from './fundamental/basic-hooks/use-state';
+import ClassComponent from './fundamental/class-component';
+import ComponentDidMount from './fundamental/component-life-cycle/component-did-mount';
+import ComponentDidUpdate from './fundamental/component-life-cycle/component-did-update';
+import ComponentWillUnmount from './fundamental/component-life-cycle/component-will-unmount';
+import GetDerivedStateFromError from './fundamental/component-life-cycle/get-derived-state-from-error';
+import GetDerivedStateFromProps from './fundamental/component-life-cycle/get-derived-state-from-props';
+import GetSnapshotBeforeUpdate from './fundamental/component-life-cycle/get-snapshot-before-update';
+import ShouldComponentUpdate from './fundamental/component-life-cycle/should-component-update';
+import CompositionVsInheritance from './fundamental/composition-vs-inheritance';
+import ConditionalRendering from './fundamental/conditional-rendering';
+import FunctionalComponent from './fundamental/functional-component';
+import JSX from './fundamental/jsx';
+import MapKey from './fundamental/map-key';
+import PropsParent from './fundamental/props-parent';
+import State from './fundamental/state';
 import Home from './home';
-import JSX from './jsx';
-import MapKey from './map-key';
-import PropsParent from './props-parent';
-import State from './state';
 
 class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { date: new Date(), counter: 0 };
-    this.increase = this.increase.bind(this);
-  }
-
-  componentDidMount() {
-    this.timer = setInterval(
-      () =>
-        this.setState({
-          date: new Date(),
-        }),
-      1000
-    );
-  }
-
-  increase() {
-    this.setState({ counter: this.state.counter + 1 });
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timer);
-  }
-
   render() {
     return (
       <div>
