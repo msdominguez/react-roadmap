@@ -1,6 +1,7 @@
 # react-roadmap
 
 ## fundamental
+`components/fundamental/*`
 
 - [x] create react app
 * `create-react-app/*`
@@ -23,11 +24,12 @@
 - [x] composition vs inheritance
 * `composition-vs-inheritance.js`
 - [x] basic hooks > useState
-* `basic-hooks/useState.js`
+* `basic-hooks/use-state.js`
 - [x] basic hooks > useEffect
-* `basic-hooks/useEffect.js`
+* `basic-hooks/use-effect.js`
 
 ## advanced
+`components/advanced/*`
 
 - [ ] hooks > writing your own hooks
 * 
