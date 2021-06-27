@@ -1,6 +1,7 @@
 # react-roadmap
 
 ## fundamental
+`components/fundamental/*`
 
 - [x] create react app
 * `create-react-app/*`
@@ -28,6 +29,7 @@
 * `basic-hooks/use-effect.js`
 
 ## advanced
+`components/advanced/*`
 
 - [ ] hooks > writing your own hooks
 * 
