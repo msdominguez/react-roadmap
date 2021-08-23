@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+import CustomHook from './advanced/custom-hook';
 import UseEffect from './fundamental/basic-hooks/use-effect';
 import UseState from './fundamental/basic-hooks/use-state';
 import ClassComponent from './fundamental/class-component';
@@ -87,6 +88,7 @@ class App extends React.Component {
             />
             <Route exact path="/useState" component={UseState} />
             <Route exact path="/useEffect" component={UseEffect} />
+            <Route exact path="/customHook" component={CustomHook} />
           </Switch>
         </BrowserRouter>
       </div>

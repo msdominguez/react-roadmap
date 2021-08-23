@@ -1,7 +1,7 @@
 import React from 'react';
 
 class Home extends React.Component {
-  getExamples() {
+  getFundExamples() {
     return [
       "jsx",
       "functionalComponent",
@@ -22,6 +22,9 @@ class Home extends React.Component {
       "useEffect",
     ];
   }
+  getAdvExamples() {
+    return ["customHook"];
+  }
 
   getLink(title) {
     const href = `/${title}`;
@@ -37,9 +40,10 @@ class Home extends React.Component {
       <div>
         <h1>Examples:</h1>
         <h2>Fundamental:</h2>
-        {this.getExamples().map((ex) => this.getLink(ex))}
+        {this.getFundExamples().map((ex) => this.getLink(ex))}
         <hr />
         <h2>Advanced:</h2>
+        {this.getAdvExamples().map((ex) => this.getLink(ex))}
       </div>
     );
   }
