@@ -17,7 +17,7 @@ function ExampleUseEffect() {
           setTemp("0");
         }
       );
-  }, [city, temp]); // only re-run the effect if name changes (componentwillUnmount, componentdidMount)
+  }, [city]); // only re-run the effect if city changes (componentwillUnmount, componentdidMount)
 
   return (
     <div>
