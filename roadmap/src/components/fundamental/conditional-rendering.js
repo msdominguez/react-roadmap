@@ -1,10 +1,10 @@
 import React from 'react';
 
-const OptionOne = () => <h1>If statement 1</h1>;
-const OptionTwo = () => <h1>If statement 2</h1>;
+const OptionOne = () => <p>If statement 1</p>;
+const OptionTwo = () => <p>If statement 2</p>;
 
 const Inline = (props) => (
-  <div>{props ? <h1>Inline 1</h1> : <h1>Inline 2</h1>}</div>
+  <div>{props ? <p>Inline 1</p> : <p>Inline 2</p>}</div>
 );
 
 class ConditionalRendering extends React.Component {
@@ -19,6 +19,7 @@ class ConditionalRendering extends React.Component {
   render() {
     return (
       <div>
+        <h2>Conditional Rendering:</h2>
         {this.ifStatement()} <Inline props={true} />
       </div>
     );

@@ -15,11 +15,9 @@ class GetDerivedStateFromPropsChild extends React.Component {
   render() {
     return (
       <div>
-        <h1>static getDerivedStateFromProps:</h1>
-        <h2>State: </h2>
-        <p>{this.state.message}</p>
-        <h2>Props: </h2>
-        <p> {this.props.props}</p>
+        <h2>static getDerivedStateFromProps:</h2>
+        <p>state: {this.state.message}</p>
+        <p>props: {this.props.props}</p>
       </div>
     );
   }

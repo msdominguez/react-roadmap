@@ -1,7 +1,20 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+import CodeSplitting from './advanced/code-splitting-parent';
+import Context from './advanced/context';
 import CustomHook from './advanced/custom-hook';
+import ErrorBoundaries from './advanced/error-boundaries';
+import FiberArchitecture from './advanced/fiber-architecture';
+import HigherOrderComponents from './advanced/higher-order-components';
+import Portals from './advanced/portals';
+import Refs from './advanced/refs';
+import RenderProps from './advanced/render-props';
+import UseCallbackParent from './advanced/use-callback-parent';
+import UseContext from './advanced/use-context';
+import UseMemo from './advanced/use-memo';
+import UseReducer from './advanced/use-reducer';
+import UseRef from './advanced/use-ref';
 import UseEffect from './fundamental/basic-hooks/use-effect';
 import UseState from './fundamental/basic-hooks/use-state';
 import ClassComponent from './fundamental/class-component';
@@ -21,6 +34,136 @@ import PropsParent from './fundamental/props-parent';
 import State from './fundamental/state';
 import Home from './home';
 
+const routes = [
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/jsx",
+    element: <JSX />,
+  },
+  {
+    path: "/functionalComponent",
+    element: <FunctionalComponent />,
+  },
+  {
+    path: "/classComponent",
+    element: <ClassComponent />,
+  },
+  {
+    path: "/state",
+    element: <State />,
+  },
+  {
+    path: "/props",
+    element: <PropsParent />,
+  },
+  {
+    path: "/conditionalRendering",
+    element: <ConditionalRendering />,
+  },
+  {
+    path: "/componentDidMount",
+    element: <ComponentDidMount />,
+  },
+  {
+    path: "/componentDidUpdate",
+    element: <ComponentDidUpdate />,
+  },
+  {
+    path: "/componentWillUnmount",
+    element: <ComponentWillUnmount />,
+  },
+  {
+    path: "/shouldComponentUpdate",
+    element: <ShouldComponentUpdate />,
+  },
+  {
+    path: "/getDerivedStateFromProps",
+    element: <GetDerivedStateFromProps />,
+  },
+  {
+    path: "/getSnapshotBeforeUpdate",
+    element: <GetSnapshotBeforeUpdate />,
+  },
+  {
+    path: "/getDerivedStateFromError",
+    element: <GetDerivedStateFromError />,
+  },
+  {
+    path: "/mapKey",
+    element: <MapKey />,
+  },
+  {
+    path: "/compositionVsInheritance",
+    element: <CompositionVsInheritance />,
+  },
+  {
+    path: "/useState",
+    element: <UseState />,
+  },
+  {
+    path: "/useEffect",
+    element: <UseEffect />,
+  },
+  {
+    path: "/customHook",
+    element: <CustomHook />,
+  },
+  {
+    path: "/useCallback",
+    element: <UseCallbackParent />,
+  },
+  {
+    path: "/useRef",
+    element: <UseRef />,
+  },
+  {
+    path: "/useMemo",
+    element: <UseMemo />,
+  },
+  {
+    path: "/useReducer",
+    element: <UseReducer />,
+  },
+  {
+    path: "/useContext",
+    element: <UseContext />,
+  },
+  {
+    path: "/context",
+    element: <Context />,
+  },
+  {
+    path: "/refs",
+    element: <Refs />,
+  },
+  {
+    path: "/renderProps",
+    element: <RenderProps />,
+  },
+  {
+    path: "/codeSplitting",
+    element: <CodeSplitting />,
+  },
+  {
+    path: "/higherOrderComponents",
+    element: <HigherOrderComponents />,
+  },
+  {
+    path: "/portals",
+    element: <Portals />,
+  },
+  {
+    path: "/errorBoundaries",
+    element: <ErrorBoundaries />,
+  },
+  {
+    path: "/fiberArchitecture",
+    element: <FiberArchitecture />,
+  },
+];
 class App extends React.Component {
   render() {
     return (
@@ -29,67 +172,11 @@ class App extends React.Component {
           <button>Home</button>
         </a>
         <BrowserRouter>
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/jsx" component={JSX} />
-            <Route
-              exact
-              path="/functionalComponent"
-              component={FunctionalComponent}
-            />
-            <Route exact path="/classComponent" component={ClassComponent} />
-            <Route exact path="/state" component={State} />
-            <Route exact path="/props" component={PropsParent} />
-            <Route
-              exact
-              path="/conditionalRendering"
-              component={ConditionalRendering}
-            />
-            <Route
-              exact
-              path="/componentDidMount"
-              component={ComponentDidMount}
-            />
-            <Route
-              exact
-              path="/componentDidUpdate"
-              component={ComponentDidUpdate}
-            />
-            <Route
-              exact
-              path="/componentWillUnmount"
-              component={ComponentWillUnmount}
-            />
-            <Route
-              exact
-              path="/shouldComponentUpdate"
-              component={ShouldComponentUpdate}
-            />
-            <Route
-              exact
-              path="/getDerivedStateFromProps"
-              component={GetDerivedStateFromProps}
-            />
-            <Route
-              exact
-              path="/getSnapshotBeforeUpdate"
-              component={GetSnapshotBeforeUpdate}
-            />
-            <Route
-              exact
-              path="/getDerivedStateFromError"
-              component={GetDerivedStateFromError}
-            />
-            <Route exact path="/mapKey" component={MapKey} />
-            <Route
-              exact
-              path="/compositionVsInheritance"
-              component={CompositionVsInheritance}
-            />
-            <Route exact path="/useState" component={UseState} />
-            <Route exact path="/useEffect" component={UseEffect} />
-            <Route exact path="/customHook" component={CustomHook} />
-          </Switch>
+          <Routes>
+            {routes.map((route, i) => (
+              <Route exact path={route.path} element={route.element} key={i} />
+            ))}
+          </Routes>
         </BrowserRouter>
       </div>
     );

@@ -13,7 +13,7 @@ class MapKey extends React.Component {
   render() {
     return (
       <div>
-        <h1>Map and Key:</h1>
+        <h2>Map and Key:</h2>
         <ul>
           <Names />
         </ul>

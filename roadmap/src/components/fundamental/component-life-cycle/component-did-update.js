@@ -10,7 +10,7 @@ class ComponentDidUpdateChild extends React.Component {
   render() {
     return (
       <div>
-        <h1>componentDidUpdate:</h1>
+        <h2>componentDidUpdate:</h2>
         {this.props.props}
       </div>
     );

@@ -6,7 +6,7 @@ class PropsParent extends React.Component {
   render() {
     return (
       <div>
-        <h1>Props:</h1>
+        <h2>Props:</h2>
         <PropsChild props="Secret Message" />
       </div>
     );

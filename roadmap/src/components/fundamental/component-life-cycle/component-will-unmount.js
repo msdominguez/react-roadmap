@@ -11,11 +11,11 @@ class ComponentWillUnmount extends React.Component {
   render() {
     return (
       <div>
-        <h1>componentWillUnmount:</h1>
+        <h2>componentWillUnmount:</h2>
         <button onClick={() => this.setState({ isUnmounted: true })}>
           Unmount item
         </button>
-        {this.state.isUnmounted ? <p>is unmounted</p> : <Item />}
+        {this.state.isUnmounted ? <p>Component is unmounted</p> : <Item />}
       </div>
     );
   }

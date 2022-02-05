@@ -14,7 +14,7 @@ class ComponentDidMount extends React.Component {
   render() {
     return (
       <div>
-        <h1>componentDidMount:</h1>
+        <h2>componentDidMount:</h2>
         {this.state.counter}
       </div>
     );

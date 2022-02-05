@@ -1,21 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-const number = "1";
-
-const jsxElement1 = <h1 className="greeting">inserted JSX {number}</h1>;
-
+const jsxElement1 = <p style={{ color: "green" }}>Greeting 1</p>;
 const jsxElement2 = React.createElement(
-  "h1",
-  { className: "greeting" },
-  "inserted JSX 2"
+  "p",
+  { style: { color: "green" } },
+  "Greeting 2"
 );
 
 class JSXChild extends React.Component {
   render() {
     return (
       <div>
-        <h1>JSX:</h1>
         {jsxElement1}
         {jsxElement2}
       </div>
@@ -29,9 +24,8 @@ class NoJSX extends React.Component {
   render() {
     return (
       <div>
-        <h1>No JSX:</h1>
-        <h1 className="greeting">inserted JSX 1</h1>
-        <h1 className="greeting">inserted JSX 2</h1>
+        <p style={{ color: "green" }}>Greeting 1</p>
+        <p style={{ color: "green" }}>Greeting 2</p>
       </div>
     );
   }
@@ -43,8 +37,9 @@ class JSX extends React.Component {
   render() {
     return (
       <div>
+        <h2>JSX:</h2>
         <JSXChild />
-        <hr />
+        <h2>No JSX:</h2>
         <NoJSX />
       </div>
     );

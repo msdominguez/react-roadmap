@@ -39,9 +39,9 @@ class UseState extends React.Component {
   render() {
     return (
       <div>
-        <h1>useState:</h1>
+        <h2>useState:</h2>
         <ExampleUseState />
-        <h1>setState:</h1>
+        <h2>setState:</h2>
         <ExampleSetState />
       </div>
     );

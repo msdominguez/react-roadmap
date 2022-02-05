@@ -9,7 +9,7 @@ class State extends React.Component {
   render() {
     return (
       <div>
-        <h1>State:</h1>
+        <h2>State:</h2>
         <p>This is the value in the state: {this.state.stateValue}</p>
       </div>
     );

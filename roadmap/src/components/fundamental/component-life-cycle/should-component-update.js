@@ -3,15 +3,15 @@ import React from 'react';
 class ShouldComponentUpdateChild extends React.Component {
   shouldComponentUpdate(nextProps, nextState) {
     console.log("should component update");
-    return nextProps.props !== this.props.props;
+    return nextProps.count !== this.props.count;
   }
 
   render() {
     return (
       <div>
-        <h1>shouldComponentUpdate:</h1>
-        <h3>{this.props.props}</h3>
-        <button onClick={this.props.onClick}>increase</button>
+        <h2>shouldComponentUpdate:</h2>
+        <p>count: {this.props.count}</p>
+        <button onClick={this.props.onClick}>Increase count</button>
       </div>
     );
   }
@@ -22,18 +22,18 @@ export { ShouldComponentUpdateChild };
 class ShouldComponentUpdate extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { counter: 0 };
+    this.state = { count: 0 };
     this.increase = this.increase.bind(this);
   }
 
   increase() {
-    this.setState({ counter: this.state.counter + 1 });
+    this.setState({ count: this.state.count + 1 });
   }
 
   render() {
     return (
       <ShouldComponentUpdateChild
-        props={this.state.counter}
+        count={this.state.count}
         onClick={this.increase}
       />
     );

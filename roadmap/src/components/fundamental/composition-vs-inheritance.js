@@ -3,7 +3,7 @@ import React from 'react';
 function ChildComponent(props) {
   return (
     <div>
-      <h1>{props.title}</h1>
+      <h2>{props.title}</h2>
       {props.children}
       {props.propsComponent}
     </div>
@@ -22,7 +22,7 @@ class CompositionVsInheritance extends React.Component {
   render() {
     return (
       <ChildComponent
-        title="compositionVsInheritance:"
+        title="Composition V.S. Inheritance:"
         propsComponent={<PropsComponent />}
       >
         <p>Hello I am props.children</p>

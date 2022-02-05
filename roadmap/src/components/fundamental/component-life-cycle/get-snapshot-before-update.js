@@ -27,7 +27,7 @@ class GetSnapshotBeforeUpdateChild extends React.Component {
   render() {
     return (
       <div>
-        <h1>getSnapshotBeforeUpdate:</h1>
+        <h2>getSnapshotBeforeUpdate:</h2>
         <p ref={this.titleRef} style={{ color: "purple" }}>
           {this.props.props}
         </p>

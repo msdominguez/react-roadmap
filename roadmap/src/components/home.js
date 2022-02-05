@@ -23,13 +23,28 @@ class Home extends React.Component {
     ];
   }
   getAdvExamples() {
-    return ["customHook"];
+    return [
+      "customHook",
+      "useCallback",
+      "useRef",
+      "useMemo",
+      "useReducer",
+      "useContext",
+      "context",
+      "refs",
+      "renderProps",
+      "codeSplitting",
+      "higherOrderComponents",
+      "portals",
+      "errorBoundaries",
+      "fiberArchitecture",
+    ];
   }
 
-  getLink(title) {
+  getLink(title, i) {
     const href = `/${title}`;
     return (
-      <a href={href}>
+      <a href={href} key={i}>
         <button>{title}</button>
       </a>
     );
@@ -38,12 +53,18 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <h1>Examples:</h1>
-        <h2>Fundamental:</h2>
-        {this.getFundExamples().map((ex) => this.getLink(ex))}
+        <h1>React Roadmap</h1>
+        <p>
+          Examples of fundamental and advanced topics from{" "}
+          <a className="link" href="https://roadmap.sh/react" target="_blank">
+            https://roadmap.sh/react
+          </a>
+        </p>
         <hr />
-        <h2>Advanced:</h2>
-        {this.getAdvExamples().map((ex) => this.getLink(ex))}
+        <h3>Fundamental:</h3>
+        {this.getFundExamples().map((ex, i) => this.getLink(ex, i))}
+        <h3>Advanced:</h3>
+        {this.getAdvExamples().map((ex, i) => this.getLink(ex, i))}
       </div>
     );
   }

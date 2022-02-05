@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
 function ExampleUseEffect() {
   const [city, setCity] = useState("West Chester");
@@ -17,7 +17,7 @@ function ExampleUseEffect() {
           setTemp("0");
         }
       );
-  }, [city]); // only re-run the effect if city changes (componentwillUnmount, componentdidMount)
+  }, [city]); // only re-run the effect if city changes
 
   return (
     <div>
@@ -34,7 +34,7 @@ class UseEffect extends React.Component {
   render() {
     return (
       <div>
-        <h1>useEffect:</h1>
+        <h2>useEffect:</h2>
         <ExampleUseEffect />
       </div>
     );

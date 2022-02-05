@@ -17,7 +17,7 @@ class GetDerivedStateFromError extends React.Component {
     return (
       <React.StrictMode>
         <div>
-          <h1>static getDerivedStateFromError:</h1>
+          <h2>static getDerivedStateFromError:</h2>
           {this.state.hasError ? (
             <div>hasError = true</div>
           ) : (
