@@ -13,107 +13,109 @@ Examples of fundamental and advanced topics from [https://roadmap.sh/react](http
 ## Topics
 
 ### Fundamental
+
 `components/fundamental/*`
 
-* [x] create react app
+- [x] create react app
 
-`create-react-app/*`
+`command ran to init app`
 
-* [x] jsx
+- [x] jsx
 
 `jsx.js`
 
-* [x] components > functional components
+- [x] components > functional components
 
 `functional-component.js`
 
-* [x] components > class components
+- [x] components > class components
 
 `class-component.js`
 
-* [x] props vs state
+- [x] props vs state
 
 `props-parent.js` `props-child.js` `state.js`
 
-* [x] conditional rendering
+- [x] conditional rendering
 
 `conditional-rendering.js`
 
-* [x] component life cycle (all)
+- [x] component life cycle (all)
 
 `component-life-cycle/*`
 
-* [x] lists and keys
+- [x] lists and keys
 
 `map-key.js`
 
-* [x] composition vs inheritance
+- [x] composition vs inheritance
 
 `composition-vs-inheritance.js`
 
-* [x] basic hooks > useState
+- [x] basic hooks > useState
 
 `basic-hooks/use-state.js`
 
-* [x] basic hooks > useEffect
+- [x] basic hooks > useEffect
 
 `basic-hooks/use-effect.js`
 
 ### Advanced
+
 `components/advanced/*`
 
-* [x] hooks > writing your own hooks
+- [x] hooks > writing your own hooks
 
 `custom-hook.js`
 
-* [x] hooks > useCallback
+- [x] hooks > useCallback
 
 `use-callback-child.js` `use-callback-parent.js`
 
-* [x] hooks > useRef
+- [x] hooks > useRef
 
 `use-ref.js`
 
-* [x] hooks > useMemo
+- [x] hooks > useMemo
 
 `use-memo.js`
 
-* [x] hooks > useReducer
+- [x] hooks > useReducer
 
 `use-reducer.js`
 
-* [x] hooks > useContext
+- [x] hooks > useContext
 
 `use-context.js`
 
-* [x] context
+- [x] context
 
 `context.js`
 
-* [x] refs
+- [x] refs
 
 `refs.js`
 
-* [x] render props
+- [x] render props
 
 `render-props.js`
 
-* [x] code splitting
+- [x] code splitting
 
 `code-splitting-child.js` `code-splitting-parent.js`
 
-* [x] higher order components
+- [x] higher order components
 
 `higher-order-components.js`
 
-* [x] portals
+- [x] portals
 
 `portals.js`
 
-* [x] error boundaries
+- [x] error boundaries
 
 `error-boundaries.js`
 
-* [x] fiber architecture
+- [x] fiber architecture
 
 `fiber-architecture.js`
