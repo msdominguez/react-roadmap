@@ -1,6 +1,15 @@
 # react-roadmap
 
-## fundamental
+## How to Run
+
+1. Clone repo
+2. `cd roadmap`
+3. `npm i`
+4. Open `localhost:3000` in browser
+
+## Topics and files
+
+### Fundamental
 `components/fundamental/*`
 
 * [x] create react app
@@ -47,7 +56,7 @@
 
 `basic-hooks/use-effect.js`
 
-## advanced
+### Advanced
 `components/advanced/*`
 
 * [x] hooks > writing your own hooks
