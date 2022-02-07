@@ -7,9 +7,9 @@ Examples of fundamental and advanced topics from [https://roadmap.sh/react](http
 ## How to Run Locally
 
 1. Clone repo
-3. `npm i`
-4. `npm run start`
-5. Open `localhost:3000` in browser
+3. Run `npm i`
+4. Run `npm run start`
+5. Navigate to `localhost:3000`
 
 ## Topics
 
