@@ -1,4 +1,4 @@
-# react-roadmap
+# React Roadmap
 
 ## How to Run
 
