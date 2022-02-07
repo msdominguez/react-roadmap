@@ -3,9 +3,10 @@
 ## How to Run
 
 1. Clone repo
-2. `cd roadmap`
-3. `npm i`
-4. Open `localhost:3000` in browser
+2. `cd roadmap` or `cd create-react-app`
+3. `npm i` if haven't yet since cloning
+4. `npm run start`
+5. Open `localhost:3000` in browser
 
 ## Topics and files
 
