@@ -1,8 +1,10 @@
 # React Roadmap
 
+[https://react-roadmap.herokuapp.com/](https://react-roadmap.herokuapp.com/)
+
 Examples of fundamental and advanced topics from [https://roadmap.sh/react](https://roadmap.sh/react)
 
-## How to Run
+## How to Run Locally
 
 1. Clone repo
 3. `npm i`
