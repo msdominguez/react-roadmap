@@ -5,8 +5,7 @@ Examples of fundamental and advanced topics from [https://roadmap.sh/react](http
 ## How to Run
 
 1. Clone repo
-2. `cd roadmap` or `cd create-react-app`
-3. `npm i` if haven't yet since cloning
+3. `npm i`
 4. `npm run start`
 5. Open `localhost:3000` in browser
 
