@@ -1,5 +1,7 @@
 # React Roadmap
 
+Examples of fundamental and advanced topics from [roadmap.sh/react](roadmap.sh/react)
+
 ## How to Run
 
 1. Clone repo
@@ -8,7 +10,7 @@
 4. `npm run start`
 5. Open `localhost:3000` in browser
 
-## Topics and files
+## Topics
 
 ### Fundamental
 `components/fundamental/*`
