@@ -102,7 +102,7 @@ Examples of fundamental and advanced topics from [roadmap.sh/react](roadmap.sh/r
 
 `code-splitting-child.js` `code-splitting-parent.js`
 
-* [x] high order components
+* [x] higher order components
 
 `higher-order-components.js`
 
